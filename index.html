@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CLICKBET88 • World Cup Smart Predictor</title>
+  <link rel="icon" href="https://plcl.me/images/A3XC9.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Orbitron:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mobile.css" />
+</head>
+<body>
+  <div class="bg-layer"></div>
+  <div class="bg-overlay"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="CLICKBET88 Home">
+      <img src="https://plcl.me/images/A3XC9.png" alt="CLICKBET88" />
+      <span>
+        <strong>CLICKBET88</strong>
+        <em>World Cup Smart Predictor</em>
+      </span>
+    </a>
+    <nav class="desktop-nav">
+      <a href="#jadwal">Jadwal</a>
+      <a href="#live">Live</a>
+      <a href="#hasil">Hasil</a>
+      <a href="#ai">Prediksi AI</a>
+    </nav>
+    <a class="login-btn" id="loginTop" target="_blank" rel="noopener">Masuk</a>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-badge">Official CLICKBET88 World Cup Center</div>
+      <h1>Bingung Mau Betting dan Tim Mana?</h1>
+      <p>Prediksi CLICKBET88 siap membantu Anda membaca jadwal, peluang, dan insight pertandingan secara lebih cepat.</p>
+      <div class="hero-actions">
+        <a class="primary-btn" id="loginHero" target="_blank" rel="noopener">Login CLICKBET88</a>
+        <a class="secondary-btn" href="#jadwal">Lihat Jadwal</a>
+      </div>
+      <div class="feature-grid">
+        <div><b>AI Prediction</b><span>Generate prediksi per match</span></div>
+        <div><b>Real-time Sheet</b><span>Update dari Google Sheet</span></div>
+        <div><b>Match Insight</b><span>Skor, peluang, dan analisa</span></div>
+        <div><b>Mobile Ready</b><span>Nyaman untuk member HP</span></div>
+      </div>
+    </section>
+
+    <section id="live" class="section-card live-card hidden">
+      <div class="section-head">
+        <span>LIVE / BERLANGSUNG</span>
+        <button class="mini-btn" data-filter="LIVE">Refresh</button>
+      </div>
+      <div id="liveList" class="match-grid"></div>
+    </section>
+
+    <section id="jadwal" class="section-card">
+      <div class="section-head">
+        <span>JADWAL PERTANDINGAN</span>
+        <button class="mini-btn" data-filter="UPCOMING">Update</button>
+      </div>
+      <div id="upcomingList" class="match-grid loading-grid"></div>
+    </section>
+
+    <section id="hasil" class="section-card">
+      <div class="section-head">
+        <span>HASIL PERTANDINGAN</span>
+        <button class="mini-btn" data-filter="FINISHED">Update</button>
+      </div>
+      <div id="completedList" class="result-list loading-grid"></div>
+    </section>
+
+    <section id="ai" class="cta-strip">
+      <div>
+        <b>Prediksi Cerdas, Menang Lebih Terarah</b>
+        <span>Member tinggal pilih match, lalu klik generate prediksi.</span>
+      </div>
+      <a class="primary-btn" id="loginBottom" target="_blank" rel="noopener">Gas Sekarang</a>
+    </section>
+  </main>
+
+  <div id="predictionModal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button id="closeModal" class="close-btn">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <footer>
+    <img src="https://plcl.me/images/A3XC9.png" alt="CLICKBET88" />
+    <p>© 2026 CLICKBET88. World Cup Smart Predictor.</p>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/ai.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
