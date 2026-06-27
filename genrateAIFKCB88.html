@@ -47,7 +47,7 @@ const FALLBACK=[
 {id:'M042',home:'France',away:'Iraq',date:'23/06/2026',time:'04:00',stage:'Group I',status:'UPCOMING',homeOdds:'0.8',awayOdds:'-0.9'},
 {id:'M043',home:'Norway',away:'Senegal',date:'23/06/2026',time:'07:00',stage:'Group I',status:'UPCOMING',homeOdds:'0.78',awayOdds:'-0.88'},
 {id:'M044',home:'Jordan',away:'Algeria',date:'23/06/2026',time:'10:00',stage:'Group J',status:'UPCOMING',homeOdds:'-0.95',awayOdds:'0.85'},
-{id:'M045',home:'Brazil',away:'Italy',date:'24/06/2026',time:'02:00',stage:'Big Match',status:'LIVE',homeOdds:'0.72',awayOdds:'-0.82'}
+{id:'M045',home:'Brazil',away:'Italy',date:'24/06/2026',time:'02:00',stage:'Big Match',status:'LIVE',homeOdds:'0.72',awayOdds:'-0.82'} 
 ];
 function el(id){return document.getElementById(id)}function flag(team){return `https://flagcdn.com/w160/${FLAG[team]||'un'}.png`}function safe(v){return String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
 function norm(row){return{ id:row.id||row.matchId||row.MatchID||row['Match ID']||'', home:row.home||row.Home||row['Team A']||row.teamA||'', away:row.away||row.Away||row['Team B']||row.teamB||'', date:row.date||row.Date||row.Tanggal||'', time:row.time||row.Time||row.Jam||'', stage:row.stage||row.Stage||row['Group / Stage']||row.Group||'', status:(row.status||row.Status||'UPCOMING').toUpperCase(), homeOdds:row.homeOdds||row.HomeOdds||row['Home Odds']||'', awayOdds:row.awayOdds||row.AwayOdds||row['Away Odds']||'', homeScore:row.homeScore||row.HomeScore||row['Score A']||'', awayScore:row.awayScore||row.AwayScore||row['Score B']||''}}
